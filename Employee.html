@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Employee Registration Form</title>
+        <style>
+            body { font-family: Arial, sans-serif; }
+            table { border-collapse: collapse; }
+            td, th { padding:8px; }
+            img { margin: 20px 0; }
+        .form-container { background-color: #f2f2f2; padding: 20px; border-radius: 5px; box-shadow: 0 0 10px rgba(0,0,0,0.1);}
+        .form-group { margin-bottom: 10px; }
+        .form-group label { display: block; margin-bottom: 5px; }
+        .form-group input[type=text],
+        .form-group input[type=email],
+        .form-group input[type=tel],
+        .form-group select,
+        .form-group textarea { width: 100%; padding: 10px; margin: 5px 0 15px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+        .form-buttons { text-align: right; }
+        .form-buttons input { padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 4px; cursor: pointer; }
+        .form-buttons input[type="reset"] { background-color: #f44336; }
+        </style>
+    </head>
+<body>
+<center>
+<img src="employee_icon.png" alt="Employee Icon" height="52" width="52">
+<h1 style="color:red;">Employee Registration Form</h1>
+<form method="post" action="prac.html" enctype="multipart/form-data">
+    <table>
+    <tr>
+    <td>Initial</td>
+    <td>
+        <input type="radio" name="initial" value="Mr." checked>Mr.
+<input type="radio" name="initial" value="Mrs.">Mrs.
+<input type="radio" name="initial" value="Ms.">Ms.
+</td>
+</tr><tr>
+<td>First Name</td>
+<td><input type="text" name="fn" placeholder="First Name" required></td>
+</tr><tr>
+<td>Last Name</td>
+<td><input type="text" name="ln" placeholder="Last Name" required></td>
+</tr><tr>
+<td>Mail Address1</td>
+<td><input type="text" name="add1" required></td>
+</tr><tr>
+<td>Mail Address2</td>
+<td><input type="text" name="add2"></td>
+</tr><tr>
+<td>City</td>
+<td><input type="text" name="ct" required></td>
+</tr><tr>
+<td>State</td>
+<td><select name="state" required>
+<option value="Gujarat">Gujarat</option>
+<option value="Maharashtra">Maharashtra</option>
+<option value="Karnataka">Karnataka</option>
+<option value="Delhi">Delhi</option>
+</select>
+</td>
+</tr><tr>
+<td>Zip</td>
+<td><input type="text" name="zp" required></td>
+</tr><tr>
+<td>Upload Photo</td>
+<td><input type="file" name="photo" required></td>
+</tr><tr>
+<td>E-Mail</td>
+<td><input type="email" name="email" size="30" required></td>
+</tr><tr>
+<td>Mobile</td>
+<td><input type="tel" name="mob" placeholder="+91" pattern="\+91[0-9]{10}" required></td>
+</tr><tr>
+<td>Languages known</td>
+<td>
+<input type="checkbox" name="lk" value="Gujarati" checked>Gujarati
+<input type="checkbox" name="lk" value="Hindi" checked>Hindi
+<input type="checkbox" name="lk" value="English" checked>English
+<input type="checkbox" name="lk" value="Marathi">Marathi
+</td>
+</tr><tr>
+<td>Additional Information</td>
+<td><textarea name="addi" rows="3" cols="20" placeholder="Optional"></textarea></td>
+</tr><tr>
+<td></td>
+<td><input type="submit" value="Submit">&nbsp;<input type="reset" value="Reset"></td>
+</tr>
+</table>
+</form>
+</center>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
